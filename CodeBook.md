@@ -26,3 +26,10 @@ Copied "X" variables with column names containing "std()" into a separate data f
 Recoded activity codes (1 - 6) to activity descriptions (e.g. WALKING, SITTING).
 
 Used the cbind() function to combine mean_df, std_df, subject_db, and y_df.
+
+Used the remove() function to eliminate variables, vectors, and data frames that were no longer needed.
+
+Used the aggregate() function to calculate the mean of each column of the "HAR_df" data frame, grouping
+rows by subject (person) and activity and storing the results in the "HAR_mean_df" data frame.
+
+Wrote the HAR_df and HAR_mean_df data frames to csv files.
