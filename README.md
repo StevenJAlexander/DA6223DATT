@@ -3,9 +3,9 @@ Data Analytics Tools and Techniques coursework
 
 Assignment 1 Human Activity Recognition Using Smartphones
 
-"DATT HW1.Rmd" is the R Markdown file that reads the source files, creates data frames, and writes CSV files.
+"run_analysis.R" is the R script the source files, creates data frames, and writes the results file.
 
-"HumanActivityRecognition.csv" is the CSV file that contains 10299 observations of 81 variables --
+"HumanActivityRecognition.txt" is the text file that contains 180 observations of 81 variables --
 the means and standard deviations from the "X" source files and the subject ID (person number) and
 activity (e.g. WALKING, SITTING, etc.).
 
