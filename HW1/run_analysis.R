@@ -1,7 +1,7 @@
 library(car)
 
 # Reading files in the working directory without a path did not work
-path = "C:/UTSA/DATT/DATT HW1/UCI HAR Dataset/"
+path = paste0(getwd(), "/")
 widths_x = rep.int(x = 16, times = 561)
 
 # Read the variable names
