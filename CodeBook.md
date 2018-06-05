@@ -4,9 +4,9 @@ I set up directories on my computer as follows:
 "UCI HAR Dataset" under "DATT HW1" with the contents of the zip file downloaded from Blackboard.
 "test" and "train" under "UCI HAR Dataset" as created by extracting files from the zip file.
 
-I wrote a R markdown script to do the following:
+I wrote an R script that did the following:
 
-Read feature/column/variable names for the X data from "features.txt" into "colnames_df".
+Read the 561 feature/column/variable names for the X data from "features.txt" into "colnames_df".
 
 Read training and test X variables from "X_train.txt" and "X_test.txt" in "trainx_df" and
 "testx_df".  Assigned column names from "colnames_df".
@@ -17,7 +17,7 @@ into "trainsub_df" and "testsub_df".
 Read activity code numbers (1 - 6) from "Y_train.txt" and "Y_test.txt" into "trainy_df" and "testy_df".
 
 Used the rbind() function to combine training and test data for "X" variables into "x_df",
-the subject ID variable into "subject_df", and activity description variable into "y_df".
+the subject ID variable into "subject_df", and activity code variable into "y_df".
 
 Copied "X" variables with column names containing "mean()" into a separate data frame, "mean_df".
 
@@ -32,4 +32,4 @@ Used the remove() function to eliminate variables, vectors, and data frames that
 Used the aggregate() function to calculate the mean of each column of the "HAR_df" data frame, grouping
 rows by subject (person) and activity and storing the results in the "HAR_mean_df" data frame.
 
-Wrote the HAR_df and HAR_mean_df data frames to csv files.
+Used the write.table() function to write the HAR_mean_df data frame to a text file.
